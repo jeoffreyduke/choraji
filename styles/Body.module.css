@@ -1,0 +1,42 @@
+.Body {
+  display: flex;
+  height: 95vh;
+  width: 100vw;
+}
+
+.nav {
+  padding-top: 1rem;
+  display: flex;
+  width: 5vw;
+  background-color: rgb(240, 240, 240);
+}
+
+.main {
+  width: 95vw;
+}
+
+.nav > ul > li {
+  display: flex;
+  position: relative;
+  right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0.8rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nav > ul > li:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.profilePic {
+  position: absolute;
+  left: 1.3rem;
+  bottom: 1rem;
+}

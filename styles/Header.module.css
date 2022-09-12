@@ -3,11 +3,12 @@
   place-items: center;
   height: 3.5rem;
   width: 100vw;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .headerCon {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   right: 3.5rem;
   height: inherit;
@@ -15,53 +16,52 @@
 
 .logo {
   position: relative;
-  right: 10rem;
-  top: 1rem;
+  right: 22rem;
+  top: 1.2rem;
 }
 
 .search {
   position: relative;
-  top: 0.5rem;
+  top: 0.35rem;
 }
 
 .search > input {
-  height: 2rem;
-  width: 20rem;
+  height: 2.1rem;
+  width: 30rem;
   position: relative;
   top: 0.2rem;
-  color: #6c6e70;
-  background-color: #f3f3f3;
+  color: #494949;
+  background-color: transparent;
   padding: 0.5rem;
   outline: none;
   border: 1px #000 solid;
-  border-left: none !important;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
 }
 
 .search > input::placeholder {
-  color: #6c6e70;
+  color: #494949;
 }
 
 .search > button {
-  height: 2rem;
+  height: 2.1rem;
   width: 2.5rem;
   position: relative;
-  top: 0.25rem;
+  top: 0.35rem;
   color: #fff;
   background-color: #000;
   border: none;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 .profile {
   position: relative;
-  top: 0.5rem;
-  left: 9rem;
+  top: 1.2rem;
+  left: 30rem;
   display: flex;
-  justify-content: space-around;
-  width: 16rem;
+  justify-content: space-between;
+  width: 8rem;
 }
 
 .profile > span:hover,
