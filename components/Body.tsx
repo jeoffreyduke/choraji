@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "../styles/Body.module.css";
-import CottageRoundedIcon from "@mui/icons-material/CottageRounded";
-import ScienceRoundedIcon from "@mui/icons-material/ScienceRounded";
-import Groups2RoundedIcon from "@mui/icons-material/Groups2Rounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import BookmarkRoundedIcon from "@mui/icons-material/BookmarkRounded";
-import { Avatar } from "@mui/material";
-import DriveFileRenameOutlineRoundedIcon from "@mui/icons-material/DriveFileRenameOutlineRounded";
+import Link from "next/link";
+import {
+  CottageRounded,
+  ScienceRounded,
+  Groups2Rounded,
+  ShoppingCartRounded,
+  BookmarkRounded,
+  DriveFileRenameOutlineRounded,
+} from "@mui/icons-material/";
+import { Avatar, Tooltip } from "@mui/material";
 
 const Body = () => {
   return (
@@ -14,25 +17,43 @@ const Body = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <CottageRoundedIcon sx={{ width: 23, height: 23 }} />
+            <Link href="/">
+              <Tooltip title="Home" placement="right" arrow>
+                <CottageRounded sx={{ width: 23, height: 23 }} />
+              </Tooltip>
+            </Link>
           </li>
           <li>
-            <ScienceRoundedIcon sx={{ width: 23, height: 23 }} />
+            <Tooltip title="Science" placement="right" arrow>
+              <ScienceRounded sx={{ width: 23, height: 23 }} />
+            </Tooltip>
           </li>
           <li>
-            <Groups2RoundedIcon sx={{ width: 23, height: 23 }} />
+            <Link href="/bookclubs">
+              <Tooltip title="Bookclubs" placement="right" arrow>
+                <Groups2Rounded sx={{ width: 23, height: 23 }} />
+              </Tooltip>
+            </Link>
           </li>
           <li>
-            <ShoppingCartRoundedIcon sx={{ width: 23, height: 23 }} />
+            <Link href="/bookshop">
+              <Tooltip title="Bookshop" placement="right" arrow>
+                <ShoppingCartRounded sx={{ width: 23, height: 23 }} />
+              </Tooltip>
+            </Link>
           </li>
           <li>
-            <BookmarkRoundedIcon sx={{ width: 23, height: 23 }} />
+            <Link href="/bookmarks">
+              <Tooltip title="Bookmarks" placement="right" arrow>
+                <BookmarkRounded sx={{ width: 23, height: 23 }} />
+              </Tooltip>
+            </Link>
           </li>
           <div className={styles.divider} />
         </ul>
 
         <div className={styles.create}>
-          <DriveFileRenameOutlineRoundedIcon sx={{ width: 28, height: 28 }} />
+          <DriveFileRenameOutlineRounded sx={{ width: 28, height: 28 }} />
         </div>
       </nav>
       <main className={styles.main}></main>
