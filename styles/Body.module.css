@@ -26,6 +26,7 @@
   background-color: #fff;
   border-radius: 2rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .divider {
@@ -51,4 +52,5 @@
   bottom: 1.5rem;
   padding: 0.5rem;
   border-radius: 2rem;
+  cursor: pointer;
 }
