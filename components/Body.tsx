@@ -6,6 +6,7 @@ import Groups2RoundedIcon from "@mui/icons-material/Groups2Rounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import BookmarkRoundedIcon from "@mui/icons-material/BookmarkRounded";
 import { Avatar } from "@mui/material";
+import DriveFileRenameOutlineRoundedIcon from "@mui/icons-material/DriveFileRenameOutlineRounded";
 
 const Body = () => {
   return (
@@ -27,16 +28,11 @@ const Body = () => {
           <li>
             <BookmarkRoundedIcon sx={{ width: 23, height: 23 }} />
           </li>
+          <div className={styles.divider} />
         </ul>
 
-        <div className={styles.profilePic}>
-          <Avatar
-            alt={"user.name"}
-            sx={{
-              height: "40px",
-              width: "40px",
-            }}
-          />
+        <div className={styles.create}>
+          <DriveFileRenameOutlineRoundedIcon sx={{ width: 28, height: 28 }} />
         </div>
       </nav>
       <main className={styles.main}></main>

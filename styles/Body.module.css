@@ -28,6 +28,16 @@
   margin-bottom: 1rem;
 }
 
+.divider {
+  position: relative;
+  right: 1rem;
+  height: 0.1rem;
+  width: 2rem;
+  background-color: rgb(211, 210, 210);
+  margin-bottom: 1rem;
+}
+
+.create:hover,
 .nav > ul > li:hover {
   background-color: #000;
   color: #fff;
@@ -35,8 +45,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-.profilePic {
+.create {
   position: absolute;
   left: 1.3rem;
   bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
 }
