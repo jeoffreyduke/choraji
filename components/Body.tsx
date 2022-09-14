@@ -11,7 +11,11 @@ import {
 } from "@mui/icons-material/";
 import { Avatar, Tooltip } from "@mui/material";
 
-const Body = () => {
+interface BodyProps {
+  Midcomp: JSX.Element;
+}
+
+const Body = ({ Midcomp }: BodyProps) => {
   return (
     <div className={styles.Body}>
       <nav className={styles.nav}>
@@ -56,7 +60,7 @@ const Body = () => {
           <DriveFileRenameOutlineRounded sx={{ width: 28, height: 28 }} />
         </div>
       </nav>
-      <main className={styles.main}></main>
+      <main className={styles.main}>{Midcomp}</main>
     </div>
   );
 };

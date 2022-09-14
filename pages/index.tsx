@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Body from "../components/Body";
 import Header from "../components/Header";
+import Homecomp from "../components/Homecomp";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <Body />
+      <Body Midcomp={<Homecomp />} />
     </div>
   );
 };
